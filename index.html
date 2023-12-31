@@ -46,8 +46,8 @@
     }
 
     function copyPassword(){
-    passwordBox.select();
-    document.contentEditable("copy");
+        passwordBox.select();
+        navigator.clipboard.writeText(passwordBox.value);
     }
     
     </script>
